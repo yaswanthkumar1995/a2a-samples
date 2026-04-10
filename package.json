@@ -1,0 +1,13 @@
+{
+  "name": "bolt-dyad",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run -w @app/server dev",
+    "build": "npm -w @app/server run build && npm -w @app/web run build",
+    "start": "npm -w @app/server start"
+  }
+}
